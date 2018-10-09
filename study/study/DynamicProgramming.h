@@ -194,3 +194,177 @@ void AddOneTwoThree_9095()
 //        return 0;
 //    }
 }
+
+void YiCheonSu2193()
+{
+	//using value_t = unsigned long long;
+	//using arr2d_t = vector<vector<value_t>>;
+
+	//value_t func(arr2d_t& d, const value_t n, const value_t l)
+	//{
+	//	if (n < 1)
+	//	{
+	//		return 0;
+	//	}
+
+	//	if (d[n][l] > 0)
+	//	{
+	//		return d[n][l];
+	//	}
+
+	//	if (n == 1)
+	//	{
+	//		d[n][l] = 1;
+	//		return d[n][l];
+	//	}
+
+	//	if (l == 0)
+	//	{
+	//		d[n][l] = func(d, n - 1, 0) + func(d, n - 1, 1);
+	//		return d[n][l];
+	//	}
+	//	else // l == 1
+	//	{
+	//		d[n][l] = func(d, n - 1, 0);
+	//		return d[n][l];
+	//	}
+	//}
+
+	//int main()
+	//{
+	//	ios::sync_with_stdio(false);
+	//	cin.tie(nullptr);
+	//	cout.tie(nullptr);
+
+	//	value_t input(0);
+	//	cin >> input;
+
+	//	arr2d_t d(input + 1, vector<value_t>(2, 0));
+
+	//	cout << func(d, input, 1);
+
+	//	return 0;
+	//}
+}
+
+void Stair10844()
+{
+//	using value_t = unsigned long long;
+//using arr2d_t = vector<vector<value_t>>;
+//
+//value_t func(arr2d_t& d, const value_t n, const value_t s)
+//{
+//	if (n < 1)
+//	{
+//		return 0;
+//	}
+//
+//	if (d[n][s] > 0)
+//	{
+//		return d[n][s];
+//	}
+//
+//	if (n == 1)
+//	{
+//		d[n][s] = 1;
+//		return d[n][s];
+//	}
+//
+//	if (s == 0)
+//	{
+//		d[n][s] = func(d, n - 1, s + 1);
+//	}
+//	else if (s == 9)
+//	{
+//		d[n][s] = func(d, n - 1, s - 1);
+//	}
+//	else // 0 < s < 9
+//	{
+//		d[n][s] = func(d, n - 1, s - 1) + func(d, n - 1, s + 1);
+//	}
+//
+//	d[n][s] %= 1000000000;
+//	return d[n][s];
+//}
+//
+//int main()
+//{
+//	ios::sync_with_stdio(false);
+//	cin.tie(nullptr);
+//	cout.tie(nullptr);
+//
+//	value_t input = 0;
+//	cin >> input;
+//
+//	arr2d_t d(input + 1, vector<value_t>(10, 0));
+//
+//	value_t res = 0;
+//	for (int i = 1; i <= 9; ++i)
+//	{
+//		res += func(d, input, i);
+//	}
+//	res %= 1000000000;
+//	cout << res;
+//
+//	return 0;
+//}
+}
+
+void problem11057()
+{
+	//using value_t = int;
+	//using arr2d_t = vector<vector<value_t>>;
+
+	//value_t func(arr2d_t& d, value_t n, value_t m)
+	//{
+	//	if (n < 1)
+	//	{
+	//		return 0;
+	//	}
+
+	//	if (d[n][m] > 0)
+	//	{
+	//		return d[n][m];
+	//	}
+
+	//	if (n == 1)
+	//	{
+	//		d[n][m] = 1;
+	//		return d[n][m];
+	//	}
+
+	//	value_t sum = 0;
+	//	for (value_t i = 9; i >= m; --i)
+	//	{
+	//		sum += func(d, n - 1, i);
+	//		sum %= 10007;
+	//	}
+
+	//	d[n][m] = sum;
+	//	return d[n][m];
+	//}
+
+	//int main()
+	//{
+	//	ios::sync_with_stdio(false);
+	//	cin.tie(nullptr);
+	//	cout.tie(nullptr);
+
+	//	value_t input = 0;
+	//	cin >> input;
+
+	//	arr2d_t d(input + 1, vector<value_t>(10, 0));
+
+	//	value_t res = 0;
+	//	for (value_t i = 9; i >= 0; --i)
+	//	{
+	//		res += func(d, input, i);
+	//		res %= 10007;
+	//	}
+
+	//	cout << res;
+
+	//	return 0;
+	//}
+
+}
