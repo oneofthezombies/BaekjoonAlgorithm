@@ -368,3 +368,237 @@ void problem11057()
 	//}
 
 }
+
+void problem9465()
+{
+//#include <iostream>
+//#include <vector>
+//	using namespace std;
+//
+//	using value_t = long long;
+//	using arr2d_t = vector<vector<value_t>>;
+//
+//	int main()
+//	{
+//		ios::sync_with_stdio(false);
+//		cin.tie(nullptr);
+//		cout.tie(nullptr);
+//
+//		value_t t = 0;
+//		cin >> t;
+//
+//		for (value_t ti = 0; ti < t; ++ti)
+//		{
+//			value_t n = 0;
+//			cin >> n;
+//
+//			arr2d_t table(n + 1, vector<value_t>(2, 0));
+//			arr2d_t memo(n + 1, vector<value_t>(3, 0));
+//
+//			for (value_t i = 0; i < 2; ++i)
+//			{
+//				for (value_t j = 1; j <= n; ++j)
+//				{
+//					cin >> table[j][i];
+//				}
+//			}
+//
+//			auto maxFunc = [](const value_t a, const value_t b, const value_t c)
+//			{
+//				value_t max = a;
+//
+//				if (b > max)
+//					max = b;
+//
+//				if (c > max)
+//					max = c;
+//
+//				return max;
+//			};
+//
+//			memo[1][1] = table[1][0];
+//			memo[1][2] = table[1][1];
+//			value_t max = 0;
+//			for (value_t mi = 2; mi >= 0; --mi)
+//			{
+//				for (value_t di = 2; di <= n; ++di)
+//				{
+//					memo[di][0] = maxFunc(memo[di - 1][0], memo[di - 1][1], memo[di - 1][2]);
+//					memo[di][1] = maxFunc(memo[di - 1][0], memo[di - 1][2], 0) + table[di][0];
+//					memo[di][2] = maxFunc(memo[di - 1][0], memo[di - 1][1], 0) + table[di][1];
+//				}
+//			}
+//
+//			max = maxFunc(memo[n][0], memo[n][1], memo[n][2]);
+//
+//			cout << max << '\n';
+//		}
+//
+//		return 0;
+//	}
+}
+
+void problem2156()
+{
+//#include <iostream>
+//#include <vector>
+//    using namespace std;
+//
+//    using value_t = long long;
+//    using arr2d_t = vector<vector<value_t>>;
+//
+//    int main()
+//    {
+//        ios::sync_with_stdio(false);
+//        cin.tie(nullptr);
+//        cout.tie(nullptr);
+//
+//        value_t n = 0;
+//        cin >> n;
+//
+//        vector<value_t> table(n + 1, 0);
+//
+//        for (value_t ni = 1; ni <= n; ++ni)
+//        {
+//            cin >> table[ni];
+//        }
+//
+//        arr2d_t memo(n + 1, vector<value_t>(3, 0));
+//
+//        memo[1][0] = 0;
+//        memo[1][1] = table[1];
+//        memo[1][2] = 0;
+//
+//        auto max = [](const value_t a, const value_t b, const value_t c)
+//        {
+//            value_t max = a;
+//
+//            if (b > max)
+//                max = b;
+//
+//            if (c > max)
+//                max = c;
+//
+//            return max;
+//        };
+//
+//        for (value_t i = 2; i <= n; ++i)
+//        {
+//            memo[i][0] = max(memo[i - 1][0], memo[i - 1][1], memo[i - 1][2]);
+//            memo[i][1] = memo[i - 1][0] + table[i];
+//            memo[i][2] = memo[i - 1][1] + table[i];
+//        }
+//
+//        cout << max(memo[n][0], memo[n][1], memo[n][2]);
+//
+//        return 0;
+//    }
+
+}
+
+void problem11053()
+{
+//#include <iostream>
+//#include <vector>
+//    using namespace std;
+//
+//    using value_t = long long;
+//    using arr_t = vector<value_t>;
+//    using arr2d_t = vector<vector<value_t>>;
+//
+//    int main()
+//    {
+//        ios::sync_with_stdio(false);
+//        cin.tie(nullptr);
+//        cout.tie(nullptr);
+//
+//        value_t n = 0;
+//        cin >> n;
+//
+//        arr_t A(n + 1, 0);
+//        arr_t D(n + 1, 0);
+//
+//        for (value_t ai = 1; ai <= n; ++ai)
+//            cin >> A[ai];
+//
+//        value_t max = 0;
+//        for (value_t i = 1; i <= n; ++i)
+//        {
+//            value_t local_max = 0;
+//            for (value_t j = i - 1; j >= 1; --j)
+//            {
+//                if (A[j] < A[i])
+//                {
+//                    if (D[j] > local_max)
+//                    {
+//                        local_max = D[j];
+//                    }
+//                }
+//            }
+//
+//            D[i] = local_max + 1;
+//
+//            if (D[i] > max)
+//                max = D[i];
+//        }
+//
+//        cout << max;
+//
+//        return 0;
+//    }
+}
+
+void problem11055()
+{
+//#include <iostream>
+//#include <vector>
+//    using namespace std;
+//
+//    using value_t = long long;
+//    using arr_t = vector<value_t>;
+//    using arr2d_t = vector<vector<value_t>>;
+//
+//    int main()
+//    {
+//        ios::sync_with_stdio(false);
+//        cin.tie(nullptr);
+//        cout.tie(nullptr);
+//
+//        value_t n = 0;
+//        cin >> n;
+//
+//        arr_t A(n + 1, 0);
+//        arr_t D(n + 1, 0);
+//
+//        for (value_t ai = 1; ai <= n; ++ai)
+//        {
+//            cin >> A[ai];
+//        }
+//
+//        auto max = [](const value_t lhs, const value_t rhs) -> value_t
+//        {
+//            return lhs > rhs ? lhs : rhs;
+//        };
+//
+//        value_t sum_max = 0;
+//        for (value_t i = 1; i <= n; ++i)
+//        {
+//            value_t local_sum_max = 0;
+//            for (value_t j = i - 1; j >= 1; --j)
+//            {
+//                if (A[j] < A[i])
+//                {
+//                    local_sum_max = max(D[j], local_sum_max);
+//                }
+//            }
+//
+//            D[i] = local_sum_max + A[i];
+//
+//            sum_max = max(D[i], sum_max);
+//        }
+//
+//        cout << sum_max;
+//
+//        return 0;
+//    }
+}
