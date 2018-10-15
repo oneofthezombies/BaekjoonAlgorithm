@@ -602,3 +602,191 @@ void problem11055()
 //        return 0;
 //    }
 }
+
+void problem11722()
+{
+//#include <iostream>
+//#include <vector>
+//    using namespace std;
+//
+//    using value_t = long long;
+//    using arr_t = vector<value_t>;
+//    using arr2d_t = vector<vector<value_t>>;
+//
+//    int main()
+//    {
+//        ios::sync_with_stdio(false);
+//        cin.tie(nullptr);
+//        cout.tie(nullptr);
+//
+//        value_t n = 0;
+//        cin >> n;
+//
+//        arr_t A(n + 1, 0);
+//        arr_t D(n + 1, 0);
+//
+//        for (value_t ai = 1; ai <= n; ++ai)
+//        {
+//            cin >> A[ai];
+//        }
+//
+//        value_t max_length = 0;
+//        for (value_t ni = 1; ni <= n; ++ni)
+//        {
+//            value_t length = 0;
+//            for (value_t ai = ni - 1; ai >= 1; --ai)
+//            {
+//                if (A[ai] > A[ni])
+//                {
+//                    if (D[ai] > length)
+//                    {
+//                        length = D[ai];
+//                    }
+//                }
+//            }
+//
+//            D[ni] = length + 1;
+//
+//            if (D[ni] > max_length)
+//                max_length = D[ni];
+//        }
+//
+//        cout << max_length;
+//
+//        return 0;
+//    }
+}
+
+void problem11054()
+{
+//#include <iostream>
+//#include <vector>
+//    using namespace std;
+//
+//    using value_t = long long;
+//    using arr_t = vector<value_t>;
+//    using arr2d_t = vector<vector<value_t>>;
+//
+//    int main()
+//    {
+//        ios::sync_with_stdio(false);
+//        cin.tie(nullptr);
+//        cout.tie(nullptr);
+//
+//        value_t n = 0;
+//        cin >> n;
+//
+//        arr_t A(n + 1, 0);
+//
+//        enum Policy : size_t
+//        {
+//            kDown,
+//            kUp,
+//            kSum,
+//            kLength
+//        };
+//
+//        arr2d_t D(n + 1, arr_t(kLength, 0));
+//
+//        for (value_t ai = 1; ai <= n; ++ai)
+//            cin >> A[ai];
+//
+//        auto max = [](const value_t lhs, const value_t rhs) -> value_t
+//        {
+//            return lhs > rhs ? lhs : rhs;
+//        };
+//
+//        for (value_t di = 1; di <= n; ++di)
+//        {
+//            value_t up_len = 0;
+//            for (value_t ai = di - 1; ai >= 1; --ai)
+//            {
+//                if (A[ai] < A[di])
+//                    up_len = max(D[ai][kUp], up_len);
+//            }
+//
+//            D[di][kUp] = up_len + 1;
+//        }
+//
+//        for (value_t di = n; di >= 1; --di)
+//        {
+//            value_t down_len = 0;
+//            for (value_t ai = di + 1; ai <= n; ++ai)
+//            {
+//                if (A[ai] < A[di])
+//                    down_len = max(D[ai][kDown], down_len);
+//            }
+//
+//            D[di][kDown] = down_len + 1;
+//        }
+//
+//        value_t max_len = 0;
+//        for (value_t di = 1; di <= n; ++di)
+//        {
+//            D[di][kSum] = D[di][kDown] + D[di][kUp] - 1;
+//
+//            max_len = max(D[di][kSum], max_len);
+//        }
+//
+//        cout << max_len;
+//
+//        return 0;
+//    }
+
+}
+
+void problem1912()
+{
+//#include <iostream>
+//#include <limits>
+//#include <vector>
+//    using namespace std;
+//
+//    using value_t = long long;
+//    using arr_t = vector<value_t>;
+//    using arr2d_t = vector<vector<value_t>>;
+//
+//    int main()
+//    {
+//        ios::sync_with_stdio(false);
+//        cin.tie(nullptr);
+//        cout.tie(nullptr);
+//
+//        value_t n = 0;
+//        cin >> n;
+//
+//        arr_t A(n + 1, 0);
+//
+//        enum : size_t
+//        {
+//            kContinue,
+//            kNewStart,
+//            kLength
+//        };
+//        arr2d_t D(n + 1, arr_t(kLength, 0));
+//
+//        for (value_t ai = 1; ai <= n; ++ai)
+//            cin >> A[ai];
+//
+//        auto max = [](const value_t lhs, const value_t rhs) -> value_t
+//        {
+//            return lhs > rhs ? lhs : rhs;
+//        };
+//
+//        value_t _max = numeric_limits<value_t>::min();
+//        value_t before = 0;
+//        for (value_t di = 1; di <= n; ++di)
+//        {
+//            D[di][kContinue] = before + A[di];
+//            D[di][kNewStart] = A[di];
+//
+//            before = max(D[di][kContinue], D[di][kNewStart]);
+//
+//            _max = max(before, _max);
+//        }
+//
+//        cout << _max;
+//
+//        return 0;
+//    }
+}

@@ -118,3 +118,148 @@ void Editor()
     //    return 0;
     //}
 }
+
+void problem10828()
+{
+//#include <iostream>
+//#include <string>
+//#include <vector>
+//    using namespace std;
+//
+//    using value_t = unsigned int;
+//
+//    int main()
+//    {
+//        ios::sync_with_stdio(false);
+//        cin.tie(nullptr);
+//        cout.tie(nullptr);
+//
+//        value_t n = 0;
+//        cin >> n;
+//
+//        vector<value_t> stack;
+//
+//        string cmd;
+//        for (value_t i = 0; i < n; ++i)
+//        {
+//            cin >> ws >> cmd;
+//
+//            if (cmd == "push")
+//            {
+//                value_t num = 0;
+//                cin >> num;
+//
+//                stack.push_back(num);
+//            }
+//            else if (cmd == "pop")
+//            {
+//                if (stack.empty())
+//                {
+//                    cout << -1 << '\n';
+//                }
+//                else
+//                {
+//                    cout << stack.back() << '\n';
+//
+//                    stack.pop_back();
+//                }
+//            }
+//            else if (cmd == "size")
+//            {
+//                cout << stack.size() << '\n';
+//            }
+//            else if (cmd == "empty")
+//            {
+//                cout << stack.empty() << '\n';
+//            }
+//            else if (cmd == "top")
+//            {
+//                if (stack.empty())
+//                {
+//                    cout << -1 << '\n';
+//                }
+//                else
+//                {
+//                    cout << stack.back() << '\n';
+//                }
+//            }
+//        }
+//
+//        return 0;
+//    }
+
+}
+
+void problem9012()
+{
+//#include <iostream>
+//#include <string>
+//#include <vector>
+//    using namespace std;
+//
+//    using value_t = char;
+//
+//    int main()
+//    {
+//        ios::sync_with_stdio(false);
+//        cin.tie(nullptr);
+//        cout.tie(nullptr);
+//
+//        unsigned int t = 0;
+//        cin >> t;
+//
+//        for (unsigned int i = 0; i < t; ++i)
+//        {
+//            string str;
+//            getline(cin >> ws, str);
+//
+//            bool isValid = true;
+//
+//            if (str.size() % 2 != 0)
+//            {
+//                isValid = false;
+//            }
+//
+//            vector<value_t> stack;
+//
+//            for (auto c : str)
+//            {
+//                if (false == isValid)
+//                {
+//                    break;
+//                }
+//
+//                if (c == '(')
+//                {
+//                    stack.push_back(c);
+//                }
+//                else if (c == ')')
+//                {
+//                    if (stack.empty())
+//                    {
+//                        isValid = false;
+//                        break;
+//                    }
+//
+//                    stack.pop_back();
+//                }
+//            }
+//
+//            if (!stack.empty())
+//            {
+//                isValid = false;
+//            }
+//
+//            if (isValid)
+//            {
+//                cout << "YES\n";
+//            }
+//            else
+//            {
+//                cout << "NO\n";
+//            }
+//        }
+//
+//        return 0;
+//    }
+}
