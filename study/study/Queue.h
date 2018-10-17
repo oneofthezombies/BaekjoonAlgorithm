@@ -164,3 +164,80 @@ void problem1158()
 //        return 0;
 //    }
 }
+
+void problem10845Cstyle()
+{
+//#include <stdio.h>
+//#include <string.h>
+//#include <deque>
+//    using namespace std;
+//
+//    using value_t = unsigned int;
+//
+//    int main()
+//    {
+//        value_t n = 0;
+//        scanf("%u", &n);
+//
+//        deque<value_t> queue;
+//
+//        char cmd[12] = { 0, };
+//        value_t arg = 0;
+//        for (value_t ni = 0; ni < n; ++ni)
+//        {
+//            scanf("%s", cmd);
+//
+//            if (strcmp(cmd, "push") == 0)
+//            {
+//                scanf("%u", &arg);
+//
+//                queue.push_back(arg);
+//            }
+//            else if (strcmp(cmd, "pop") == 0)
+//            {
+//                if (queue.empty())
+//                {
+//                    printf("-1\n");
+//                }
+//                else
+//                {
+//                    printf("%u\n", queue.front());
+//
+//                    queue.pop_front();
+//                }
+//            }
+//            else if (strcmp(cmd, "size") == 0)
+//            {
+//                printf("%u\n", queue.size());
+//            }
+//            else if (strcmp(cmd, "empty") == 0)
+//            {
+//                printf("%u\n", queue.empty());
+//            }
+//            else if (strcmp(cmd, "front") == 0)
+//            {
+//                if (queue.empty())
+//                {
+//                    printf("-1\n");
+//                }
+//                else
+//                {
+//                    printf("%u\n", queue.front());
+//                }
+//            }
+//            else if (strcmp(cmd, "back") == 0)
+//            {
+//                if (queue.empty())
+//                {
+//                    printf("-1\n");
+//                }
+//                else
+//                {
+//                    printf("%u\n", queue.back());
+//                }
+//            }
+//        }
+//
+//        return 0;
+//    }
+}
