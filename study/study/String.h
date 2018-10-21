@@ -106,3 +106,31 @@ void problem10820()
 //        return 0;
 //    }
 }
+
+void problem2743()
+{
+//#include <cstdio>
+//    using namespace std;
+//
+//    int main()
+//    {
+//        unsigned int num = 0;
+//        char input = 0;
+//        int res = 0;
+//        while (true)
+//        {
+//            res = scanf("%c", &input);
+//
+//            if (res < 1 || input == '\n')
+//            {
+//                break;
+//            }
+//
+//            num++;
+//        }
+//
+//        printf("%u", num);
+//
+//        return 0;
+//    }
+}
