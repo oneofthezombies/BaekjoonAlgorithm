@@ -134,3 +134,51 @@ void problem2743()
 //        return 0;
 //    }
 }
+
+void problem11655()
+{
+//#include <cstdio>
+//#include <cstring>
+//#include <cctype>
+//    using namespace std;
+//
+//    int main()
+//    {
+//        char input = 0;
+//        int res = 0;
+//        char diff = 0;
+//        const char len = 'Z' - 'A' + 1;
+//        while (true)
+//        {
+//            res = scanf("%c", &input);
+//
+//            if (res <= 0 || input == '\n')
+//                break;
+//
+//            if (isalpha(input))
+//            {
+//                if (isupper(input))
+//                {
+//                    diff = input - 'A';
+//                    diff += 13;
+//                    diff %= len;
+//
+//                    input = diff + 'A';
+//                }
+//                else
+//                {
+//                    diff = input - 'a';
+//                    diff += 13;
+//                    diff %= len;
+//
+//                    input = diff + 'a';
+//                }
+//            }
+//
+//            printf("%c", input);
+//        }
+//
+//        return 0;
+//    }
+
+}
