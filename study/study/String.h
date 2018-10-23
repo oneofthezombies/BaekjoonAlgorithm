@@ -182,3 +182,78 @@ void problem11655()
 //    }
 
 }
+
+void problem10824()
+{
+//#include <cstdio>
+//
+//    using value_t = long long;
+//
+//    value_t GetTensDigit(value_t num)
+//    {
+//        value_t digit = 1;
+//        while (true)
+//        {
+//            if (num < 10)
+//            {
+//                digit *= 10;
+//                break;
+//            }
+//
+//            num /= 10;
+//            digit *= 10;
+//        }
+//
+//        return digit;
+//    }
+//
+//    value_t GetAppendSum(const value_t high, const value_t low)
+//    {
+//        return high * GetTensDigit(low) + low;
+//    }
+//
+//    int main()
+//    {
+//        value_t high = 0;
+//        value_t low = 0;
+//
+//        scanf("%lld", &high);
+//        scanf("%lld", &low);
+//
+//        value_t sum = GetAppendSum(high, low);
+//
+//        scanf("%lld", &high);
+//        scanf("%lld", &low);
+//
+//        sum += GetAppendSum(high, low);
+//
+//        printf("%lld", sum);
+//
+//        return 0;
+//    }
+}
+
+void problem11656()
+{
+//#include <iostream>
+//#include <string>
+//#include <set>
+//    using namespace std;
+//
+//    int main()
+//    {
+//        ios::sync_with_stdio(false);
+//
+//        string str;
+//        cin >> str;
+//
+//        set<string> dict;
+//        for (auto it = str.begin(); it != str.end(); ++it)
+//            dict.emplace(string(it, str.end()));
+//
+//        for (const auto& s : dict)
+//            cout << s << ' ';
+//
+//        return 0;
+//    }
+}
