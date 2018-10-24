@@ -790,3 +790,86 @@ void problem1912()
 //        return 0;
 //    }
 }
+
+void problem1463_2()
+{
+//#include <cstdio>
+//#include <vector>
+//    using namespace std;
+//
+//    using value_t = unsigned int;
+//
+//    const value_t value_max = (value_t)-1;
+//    vector<value_t> d;
+//
+//    value_t smallest(const value_t n0, const value_t n1, const value_t n2)
+//    {
+//        const value_t min = n0 < n1 ? n0 : n1;
+//        return min < n2 ? min : n2;
+//    }
+//
+//    int main()
+//    {
+//        value_t n = 0;
+//        scanf("%u", &n);
+//
+//        d.resize(n + 1, value_max);
+//        d[1] = 0;
+//
+//        value_t divide_3 = value_max;
+//        value_t divide_2 = value_max;
+//        value_t minus_1 = value_max;
+//        for (value_t i = 2; i <= n; ++i)
+//        {
+//            divide_3 = value_max;
+//            divide_2 = value_max;
+//            minus_1 = value_max;
+//
+//            if (i % 3 == 0)
+//                divide_3 = d[i / 3];
+//
+//            if (i % 2 == 0)
+//                divide_2 = d[i / 2];
+//
+//            minus_1 = d[i - 1];
+//
+//            d[i] = smallest(divide_3, divide_2, minus_1) + 1;
+//        }
+//
+//        printf("%u", d[n]);
+//
+//        return 0;
+//    }
+
+}
+
+void problem11726_2()
+{
+//#include <cstdio>
+//#include <vector>
+//    using namespace std;
+//
+//    using value_t = unsigned int;
+//    vector<value_t> d;
+//
+//    int main()
+//    {
+//        value_t n = 0;
+//        scanf("%u", &n);
+//
+//        d.resize(n + 1, 0);
+//        d[1] = 1;
+//        d[2] = 2;
+//
+//        for (value_t i = 3; i <= n; ++i)
+//        {
+//            d[i] = d[i - 1] + d[i - 2];
+//            d[i] %= 10007;
+//        }
+//
+//        printf("%u", d[n]);
+//
+//        return 0;
+//    }
+
+}
