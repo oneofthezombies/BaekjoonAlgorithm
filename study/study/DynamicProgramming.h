@@ -952,3 +952,52 @@ void problem9095_2()
 //    }
 
 }
+
+void problem11052()
+{
+//#include <cstdio>
+//#include <vector>
+//    using namespace std;
+//
+//    using value_t = unsigned long long;
+//
+//    vector<value_t> d;
+//    vector<value_t> p;
+//
+//    int main()
+//    {
+//        value_t n = 0;
+//        scanf("%llu", &n);
+//
+//        d.resize(n + 1, 0);
+//        p.resize(n + 1);
+//
+//        for (value_t i = 1; i <= n; ++i)
+//        {
+//            scanf("%llu", &p[i]);
+//        }
+//
+//        auto max = [](const value_t lhs, const value_t rhs) -> value_t 
+//        {
+//            return lhs > rhs ? lhs : rhs;
+//        };
+//
+//        d[1] = p[1];
+//        for (value_t i = 2; i <= n; ++i)
+//        {
+//            value_t max_v = p[i];
+//
+//            for (value_t j = 1; j < i; ++j)
+//            {
+//                max_v = max(max_v, d[j] + d[i - j]);
+//            }
+//
+//            d[i] = max_v;
+//        }
+//
+//        printf("%llu", d[n]);
+//
+//        return 0;
+//    }
+
+}
