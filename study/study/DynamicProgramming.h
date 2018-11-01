@@ -1001,3 +1001,146 @@ void problem11052()
 //    }
 
 }
+
+void problem10844_2()
+{
+//#include <cstdio>
+//#include <vector>
+//    using namespace std;
+//
+//    using value_t = unsigned long long;
+//    using arr2d_t = vector<vector<value_t>>;
+//
+//    value_t func(arr2d_t& d, const value_t digit, const value_t last)
+//    {
+//        if (digit == 1)
+//        {
+//            d[digit][last] = 1;
+//            return d[digit][last];
+//        }
+//
+//        if (d[digit][last] > 0)
+//        {
+//            return d[digit][last];
+//        }
+//
+//        if (last == 0)
+//        {
+//            d[digit][last] = func(d, digit - 1, last + 1);
+//        }
+//        else if (last == 9)
+//        {
+//            d[digit][last] = func(d, digit - 1, last - 1);
+//        }
+//        else // 0 < last < 9
+//        {
+//            d[digit][last] = func(d, digit - 1, last - 1) + func(d, digit - 1, last + 1);
+//        }
+//
+//        d[digit][last] %= 1000000000;
+//        return d[digit][last];
+//    }
+//
+//    int main()
+//    {
+//        value_t n = 0;
+//        scanf("%llu", &n);
+//
+//        vector<vector<value_t>> d(n + 1, vector<value_t>(10, 0));
+//
+//        value_t sum = 0;
+//        for (value_t i = 1; i <= 9; ++i)
+//        {
+//            sum += func(d, n, i);
+//            sum %= 1000000000;
+//        }
+//
+//        printf("%llu", sum);
+//
+//        return 0;
+//    }
+
+}
+
+void problem11057_2()
+{
+//#include <cstdio>
+//#include <vector>
+//    using namespace std;
+//
+//    using value_t = int;
+//    using arr2d_t = vector<vector<value_t>>;
+//
+//    value_t func(arr2d_t& d, const value_t digit, const value_t last)
+//    {
+//        if (digit == 1)
+//        {
+//            d[digit][last] = 1;
+//            return d[digit][last];
+//        }
+//
+//        if (d[digit][last] > 0)
+//        {
+//            return d[digit][last];
+//        }
+//
+//        for (value_t i = 9; i >= last; --i)
+//        {
+//            d[digit][last] += func(d, digit - 1, i);
+//            d[digit][last] %= 10007; 
+//        }
+//
+//        return d[digit][last];
+//    }
+//
+//    int main()
+//    {
+//        value_t n = 0;
+//        scanf("%d", &n);
+//
+//        vector<vector<value_t>> d(n + 1, vector<value_t>(10, 0));
+//
+//        value_t sum = 0;
+//        for (value_t i = 9; i >= 0; --i)
+//        {
+//            sum += func(d, n, i);
+//            sum %= 10007;
+//        }
+//
+//        printf("%d", sum);
+//
+//        return 0;
+//    }
+
+}
+
+void problem2193_2()
+{
+//#include <cstdio>
+//#include <vector>
+//    using namespace std;
+//
+//    using value_t = long long;
+//    using arr2d_t = vector<vector<value_t>>;
+//
+//    int main()
+//    {
+//        value_t n = 0;
+//        scanf("%lld", &n);
+//
+//        arr2d_t d(n + 1, vector<value_t>(2, 0));
+//        d[1][0] = 1;
+//        d[1][1] = 1;
+//
+//        for (value_t i = 2; i <= n; ++i)
+//        {
+//            d[i][0] = d[i - 1][0] + d[i - 1][1];
+//            d[i][1] = d[i - 1][0];
+//        }
+//
+//        printf("%lld", d[n][1]);
+//
+//        return 0;
+//    }
+
+}
